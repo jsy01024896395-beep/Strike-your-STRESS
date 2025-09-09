@@ -3,44 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>링크 모음</title>
+    <title>스트레스 해소 링크</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
             padding: 20px;
+            color: #1a202c;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            z-index: 10;
+            background-color: transparent;
+            color: #1a202c;
+            text-align: center;
+        }
+
+        .title {
+            color: #1a202c;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .title-sub {
+            color: #1a202c;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .link-button {
+            font-weight: bold;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-text {
+            color: #6b7280;
+            margin-top: 2rem;
+            font-size: 0.875rem;
         }
     </style>
 </head>
-<body class="bg-gray-100 p-8">
+<body class="p-8">
 
-    <div class="bg-white p-8 rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 hover:scale-105">
-        <h1 class="text-4xl font-bold text-center mb-6 text-gray-800">Strike your STRESS !!</h1>
-        <p class="text-center text-gray-600 mb-8">아래 탭을 클릭하여 해당 페이지로 이동하세요.</p>
+    <div class="container relative z-10 p-8 rounded-xl max-w-lg w-full">
+        <h1 class="title">Strike, Your</h1>
+        <h2 class="title-sub">STRESS!</h2>
+        <p class="text-center text-gray-700 mb-8">아래 탭을 클릭하여 해당 페이지로 이동하세요.</p>
         
-        <div class="flex space-x-4 justify-center">
+        <div class="flex flex-col space-y-4">
             
             <!-- Google AI pro for students 링크 -->
             <a href="https://gemini.google/students/?hl=ko&utm_source=teamgemini&utm_medium=referral&utm_campaign=students_influencer_gemini-students-kr-pusan-national" target="_blank" rel="noopener noreferrer" 
-               class="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transform transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-300">
+               class="link-button bg-blue-500 text-white">
                 <span class="text-xl">Google AI pro for students</span>
             </a>
             
-            <!-- Gemini 선배 사용설명서 링크 -->
-            <a href="https://cafe.naver.com/geminixgeminie" target="_blank" rel="noopener noreferrer" 
-               class="flex-1 text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-lg shadow-lg transform transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-green-300">
-                <span class="text-xl">Gemini 선배 사용설명서</span>
+            <!-- Gemini 인스타그램 팔로우 링크 -->
+            <a href="https://www.instagram.com/gemini_x_gemine/" target="_blank" rel="noopener noreferrer" 
+               class="link-button bg-sky-400 text-white">
+                <span class="text-xl">인스타그램 계정 팔로우!</span>
             </a>
             
         </div>
-
+        
     </div>
 
 </body>
